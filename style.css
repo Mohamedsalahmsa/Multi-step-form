@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+:root{
+--Marineblue: hsl(213, 96%, 18%);
+--Purplishblue: hsl(243, 100%, 62%);
+--Pastelblue: hsl(228, 100%, 84%);
+--Lightblue: hsl(206, 94%, 87%);
+--Strawberryred: hsl(354, 84%, 57%);
+--Coolgray: hsl(231, 11%, 63%);
+--Lightgray: hsl(229, 24%, 87%);
+--Magnolia: hsl(217, 100%, 97%);
+--Alabaster: hsl(231, 100%, 99%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:'ubuntu';
+}
+body{
+min-width: 100vw;
+min-height: 100vh;
+background:url(./assets/images/bg-sidebar-mobile.svg) var(--Magnolia) no-repeat fixed;
+background-size: contain;
+display: flex;
+justify-content: center;
+}
+header .numbers{
+margin: 50px 0px;
+text-align: center;
+}
+.numbers span{
+padding: 5px 10px;
+margin: 0px 10px;
+border: 2px solid white;
+border-radius: 50%;
+color: var(--White);
+cursor: pointer;
+}
+.form{
+display: flex;
+flex-direction: column;
+background-color: var(--White);
+margin: 0px 12px;
+height: 400px;
+box-shadow: 0px 0px 5px white , 0px 0px 5px black;
+border-radius: 20px;
+padding: 30px;
+}
+.form h2{
+color: var(--Marineblue);
+font-size: 32px;
+margin-bottom: 10px;
+}
+.form p{
+color: var(--Coolgray);
+line-height: 21px;
+margin-bottom: 20px;
+}
+.form1 input{
+margin-bottom: 20px;
+padding: 10px;
+border: 2px solid var(--Coolgray);
+font-size: 18px;
+}
+.form1 label{
+color: var(--Marineblue);
+}
+.form1 ::placeholder{
+font-size: 16px;
+}
+.form2{
+height: 550px;
+}
+.form2 :nth-child(2){
+font-size: 20px;
+line-height: 28px;
+cursor: pointer;
+}
+.form .boxs .box{
+border: 2px solid var(--Coolgray);
+border-radius: 10px;
+margin-bottom: 10px;
+padding:15px;
+height: 90px;
+display: flex;
+cursor: pointer;
+}
+.form2 .boxs .box img{
+position: relative;
+margin: 0px 20px;
+left: -20px;
+width: 48px;
+cursor: pointer;
+}
+.form2 .boxs .box .text{
+position: relative;
+margin-top: 8px;
+line-height: 25px;
+left: -20px;
+}
+.form2 .boxs .box span{
+color: var(--Marineblue);
+font-weight: bold;
+font-size: 20px;
+}
+.form2 .boxs .box4{
+border: none;
+}
+.form2 .boxs .box4 span{
+margin: 0px 16px;
+}
+.form2 .boxs .box4 .input{
+padding: 5px;
+width: 60px;
+height: 30px;
+background-color: var(--Marineblue);
+border-radius: 20px;
+}
+.form2 .boxs .box4 .input span{
+position: relative;
+padding: 1px 11px;
+border-radius: 50%;
+background-color: var(--White);
+left: -15px;
+bottom: 3.5px;
+cursor: pointer;
+transition: .4s;
+}
+.form2 .boxs .box4 .input .toggleCheck{
+left: 14px;
+}
+.form3{
+height: 460px;
+}
+.form3 .boxs .box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 110%;
+margin-left: -15px;
+}
+input[type="checkbox"]{
+width: 25px;
+height: 25px;
+}
+.centerText{
+margin-top: 16px;
+line-height: 28px;
+}
+.b2{
+margin-right: 40px;
+}
+.centerText :first-child{
+color: var(--Marineblue);
+font-weight: bold;
+}
+.form3 .rightText p{
+color: var(--Purplishblue);
+}
+.form4{
+height: 500px;
+}
+.form4 .boxs .box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+border: none;
+border-radius:0;
+}
+.form4 .boxs{
+background-color: var(--Magnolia);
+border-radius: 8px;
+}
+.form4 .boxs .box .leftText p{
+line-height: 0px;
+}
+.form4 .boxs .box .leftText .arcade{
+color: var(--Marineblue);
+font-weight: bold;
+}
+.change{
+text-decoration: underline;
+}
+.form4 .rightText p{
+color: var(--Marineblue);
+}
+.form4 .bold{
+color: var(--Marineblue);
+font-weight: bold;
+}
+.form4 .boxs .transparent{
+background-color: var(--White);
+}
+.form4 .rightText .totalPrice{
+color: var(--Purplishblue);
+font-weight: bold;
+}
+.form4 .boxs .border{
+border-bottom: 1px solid var(--Lightgray);
+}
+.form5{
+text-align: center;
+}
+.form5 img{
+text-align: center;
+width: 60px;
+}
+.form5 .img{
+text-align: center;
+margin-bottom: 20px;
+}
+.form5 p{
+width: 300px;
+line-height: 25px;
+}
+footer{
+position: fixed;
+bottom: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0px 15px;
+color: var(--Coolgray);
+font-weight: bold;
+}
+footer .next{
+position: fixed;
+right: 15px;
+}
+footer .next button{
+padding: 14px;
+background-color: var(--Purplishblue);
+color: var(--White);
+border: none;  
+border-radius: 5px;
+cursor: pointer;
+font-size: 15px;
+}
+.pervious{
+cursor: pointer;
+}
+.none{
+    display: none;
+}
+
+.toggleYear{
+display: none;
+}
+.toggleMonth{
+    display: none;
+}
+.select {
+    background-color: rgba(5, 69, 188, 0.349);
+}
+
+@media (min-width:800px){
+    body{
+        background: none;
+    }
+ header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }.numbers{
+    display: flex;
+    flex-direction: column;
+
+ }
+ .numbers span{
+    margin: 20px 20px;
+ }
+    .leftContainer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .leftContainer .numDetail .num{
+        margin: 35px 0px;
+    }
+    header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        box-shadow: 0px 0px 5px white , 0px 0px 10px black;
+        border-radius: 20px;
+        padding: 8px;
+        margin-top: 60px;
+    }.allinfo{
+       position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        left: 10px;
+        top: 10px;
+    }
+    .num p:first-child{
+       color: var(--Coolgray); 
+       text-transform: uppercase;
+    }
+    .num p:nth-child(2){
+        color: var(--White);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .num p{
+        line-height: 20px;
+    }
+    .form{
+        box-shadow: none;
+    }
+    footer{
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+    }
+    footer .next{
+        position: absolute;
+        right: -320px;
+        
+    }
+
+}
+
+.activee {
+    background-color: var(--Pastelblue);
+}
+

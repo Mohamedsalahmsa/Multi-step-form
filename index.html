@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href=""> 
+<title> Multi-step form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+<div class="leftContainer">
+  <div class="imgCont">
+    <img src="./assets/images/bg-sidebar-desktop.svg" >
+  </div>
+  <div class="allinfo">
+    <div class="numbers">
+      <span class="activee">1</span>
+      <span class="">2</span>
+      <span class="">3</span>
+      <span class="">4</span>
+      </div>
+      <div class="numDetail">
+  <div class="num">
+    <p>Step 1</p>
+    <p>Your info</p>
+  </div>
+  <div class="num">
+    <p>Step 2</p>
+    <p>select plan</p>
+  </div>
+  <div class="num">
+    <p>Step 3</p>
+    <p>adds-ons</p>
+  </div>
+  <div class="num">
+    <p>Step 4</p>
+    <p>summary</p>
+  </div>
+      </div>
+  </div>
+</div>
+ <!-- From num1 -->
+<div class="form1 form">
+<h2>Personal info</h2>
+<p>Please provide your name, email address, and phone number.</p>
+<label for="name">Name</label>
+<input type="text" placeholder="e.g. Stephen King" id="name">
+<label for="email">Email Address</label>
+<input type="email" placeholder="e.g. stephenking@lorem.com" id="email">
+<label for="phone">Phone Number</label>
+<input type="number" placeholder="e.g. +1 234 567 890" id="phone">
+</div>
+ <!-- End of Form1 -->
+
+<!-- Form num2 -->
+<div class="form2 form none">
+<h2>Select your plan</h2>
+<p>You have the option of monthly or yearly billing.</p>
+
+<!-- All boxs -->
+<div class="boxs">
+<!-- Box1 -->
+<div class="box">
+<img src="./assets/images/icon-arcade.svg"> 
+<div class="text">
+<span>Arcade</span>
+<p>$9/mo</p>
+<p class="toggleYear">$9/yr</p>
+</div>
+</div>
+
+<!-- Box2 -->
+<div class="box">
+<img src="./assets/images/icon-advanced.svg">
+<div class="text">
+<span>Advanced</span>
+<p>$12/mo</p>
+<p class="toggleYear">$12/yr</p>
+</div>
+</div>
+
+<!-- Box3 -->
+<div class="box">
+<img src="./assets/images/icon-pro.svg">
+<div class="text">
+  <span>Pro</span>
+<p >$15/mo</p>
+<p class="toggleYear">$15/yr</p>
+</div>
+</div>
+<!-- Box4 -->
+<div class="box box4">
+  <span>Monthly</span>
+<span class="input"><span class="check"></span></span>
+<span>Yearly</span>
+</div>
+</div>
+
+</div>
+<!-- End of Form2 -->
+
+
+<div class="form3 form none">
+<h2>Pick add-ons</h2>
+<p>Add-ons help enhance your gaming experience.</p>
+<!-- All boxs -->
+<div class="boxs">
+<!-- Box1 -->
+<div class="box">
+<div class="left">
+<input type="checkbox" name="service" id="service">
+</div>
+<div class="centerText">
+<label for="service">Online Service</label>
+<p>Access to multiplayer games</p>
+</div>
+<div class="rightText">
+  <p>+$1/mo</p>
+  <p class="toggleYear">+$1/yr</p>
+</div>
+</div>
+<!-- Box2 -->
+<div class="box">
+<div class="left">
+<input type="checkbox" name="service" id="storage">
+</div>
+<div class="centerText b2">
+<label for="storage">Larger Storage</label>
+<p>Extra 1TB of cloud save</p>
+</div>
+<div class="rightText">
+<p >+$2/mo</p>
+<p class="toggleYear">+$2/yr</p>
+</div>
+</div>
+<!-- Box3 -->
+<div class="box">
+<div class="left">
+<input type="checkbox" name="service" id="Custom">
+</div>
+<div class="centerText">
+<label for="Custom">Customizable Profile</label>
+<p>Custom theme on your profile</p>
+</div>
+<div class="rightText">
+<p >+$2/mo</p>
+<p class="toggleYear">+$2/yr</p>
+</div>
+</div>
+</div>
+</div>
+<!-- End of Form3 -->
+<div class="form4 form  none">
+<h2>Finishing up</h2>
+<p>Double-check everything looks OK before confirming.</p>
+<!-- All boxs -->
+<div class="boxs">
+<!-- Box1 -->
+<div class="box border">
+<div class="leftText">
+<p class="arcade">Arcade (Monthly)</p>
+<p class="arcade toggleYear">Arcade (Yearly)</p>
+<p class="change">Change</p>
+</div>
+<div class="rightText">
+<p class="bold ">$90/mo</p>
+<p class="toggleYear bold">$90/yr</p>
+</div>
+</div>
+<!-- Box2 -->
+<div class="box">
+<div class="leftText"><p>Online Service</p></div>
+<div class="rightText">
+   <p >+$10/mo</p>
+  <p class="toggleYear">+$10/yr</p>
+</div>
+
+</div>
+<!-- Box3 -->
+<div class="box">
+<div class="leftText"><p>Larger Storage</p></div>
+<div class="rightText">
+  <p>+$20/mo</p> <p class="toggleYear">+$20/yr</p>
+</div>
+</div>
+<!-- Box4 -->
+<div class="box transparent">
+<div class="leftText"><p>Total(Per Month)</p> <p class="toggleYear">Total(Per Year)</p></div>
+<div class="rightText"><p class="totalPrice ">+$120/mo</p> <p class="toggleYear totalPrice">+$120/yr</p></div>
+</div>
+</div>
+</div>
+<!-- End of Form4 -->
+<div class="form5 form none">
+<div class="img"><img src="./assets/images/icon-thank-you.svg"></div>
+<h2>Thank you!</h2>
+<p>Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.</p>
+</div>
+<footer>
+  <div class="pervious">
+  <p>Go Back</p>
+  </div>
+  <div class="next">
+  <button>Next Step</button>
+  </div>
+  </footer>
+</header>
+<script src="main.js"></script>
+</body>
+</html>
+
+
